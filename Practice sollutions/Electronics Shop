@@ -1,0 +1,17 @@
+
+#
+# Complete the getMoneySpent function below.
+#
+def getMoneySpent(keyboards, drives, b):
+    r = list() #this list contains sum of keyboard and drives list which is less than budget
+    for x in keyboards:
+        for y in drives:
+            if sum([x,y])<=b :
+                r.append(sum([x,y]))
+    
+    if(len(r)>0):
+        return max(r)
+    else:
+        return -1
+        
+ #if you have any query contact : nilayp799@gmail.com
