@@ -1,0 +1,12 @@
+# Complete the divisibleSumPairs function below.
+def divisibleSumPairs(n, k, ar):
+    arr=ar
+    c=0
+    for i in range(0,len(ar)):
+        for j in range(0,len(arr)):
+            if(ar[i]<arr[j] and (ar[i]+arr[j])%k==0):
+                c +=1
+
+    return c
+  
+#if you have any query contact : nilayp799@gmail.com
