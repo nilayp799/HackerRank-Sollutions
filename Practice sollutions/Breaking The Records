@@ -1,0 +1,15 @@
+# Complete the breakingRecords function below.
+def breakingRecords(scores):
+    high,low,h,l=scores[0],scores[0],0,0
+    
+    for i in range(1,len(scores)):
+        if(scores[i]>high):
+            high=scores[i]
+            h = h+1
+        if(scores[i]<low):
+            low=scores[i]
+            l = l+1
+
+    return (h,l)
+   
+#if you have any query contact : nilayp799@gmail.com
