@@ -1,0 +1,20 @@
+# Complete the climbingLeaderboard function below.
+def climbingLeaderboard(scores, alice):
+    r=list()
+    score_fin=list()
+    for j in scores: 
+        if j not in score_fin: 
+            score_fin.append(j)
+              
+    for i in range(0,len(alice)): 
+        scores.append(alice[i])
+        for j in scores: 
+            if j not in score_fin: 
+                score_fin.append(j)
+        score_fin.sort(reverse = True)
+        r.append(score_fin.index(alice[i])+1)
+
+    return r
+    
+#note: this code is working correctly for all cases but in high arguments it will take 1 or 2 more seconds to complete the task
+#if you have any query contact : nilayp799@gmail.com
