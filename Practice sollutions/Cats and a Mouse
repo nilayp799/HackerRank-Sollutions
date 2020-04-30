@@ -1,0 +1,11 @@
+# Complete the catAndMouse function below.
+def catAndMouse(x, y, z):
+    if(abs(z-x)==abs(z-y)):
+        return "Mouse C"
+    else:
+        if(abs(z-x)<abs(z-y)):
+            return "Cat A"
+        else:
+            return "Cat B"
+            
+#if you have any query contact : nilayp799@gmail.com
