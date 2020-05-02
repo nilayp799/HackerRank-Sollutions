@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    print(a+b)
+    print(a-b)
+    print(a*b)
+    
+# if you have any query contact : nilayp799@gmail.com
