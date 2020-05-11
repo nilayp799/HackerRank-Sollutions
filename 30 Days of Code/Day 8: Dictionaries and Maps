@@ -1,0 +1,23 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+class_list = dict()
+for i in range(0,n):
+    data = input()
+    temp = data.split()
+    class_list[temp[0]] = int(temp[1])
+k=0
+for i in range(0,n):
+    x=input()
+    for key, value in class_list.items():
+        if key==x:
+            print("{}={}".format(key,value))
+        else:
+            k +=1
+    if k>=n :
+        print("Not found")
+        k=0
+        
+
+#this code contains time limit problem (code works perfact but in some case it consume more time)
+
+# if you have any query please contact : nilayp799@gmail.com
