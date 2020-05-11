@@ -1,0 +1,17 @@
+n = int(input())
+a=[0,0,0,0,0,0,0,0,0,0]
+e=['','','','','','','','','','']
+o=['','','','','','','','','','']
+for i in range(0,n):
+   a[i]=input()
+for i in range(0,n):
+    for j in range(0,len(a[i])):
+        if(j%2==0):
+            e[i] += a[i][j]
+        else:
+            o[i] += a[i][j]
+            
+for i in range(0,n):
+    print(e[i]+" "+o[i])
+
+# if you have any query please contact : nilayp799@gmail.com
