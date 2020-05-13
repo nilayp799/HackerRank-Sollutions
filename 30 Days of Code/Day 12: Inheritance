@@ -1,0 +1,22 @@
+class Student(Person):
+    #   Class Constructor
+    def __init__(self, firstName, lastName, idNumber,testscores):
+        super().__init__(firstName, lastName, idNumber)
+        self.scores = scores
+
+    def calculate(self):
+        avg = sum(scores)/len(scores)
+
+        if 90 <= avg <= 100:
+            return 'O'
+        if 80 <= avg < 90:
+            return 'E'
+        if 70 <= avg < 80:
+            return 'A'
+        if 55 <= avg < 70:
+            return 'P'
+        if 40 <= avg < 55:
+            return 'D'
+        return 'T'
+        
+# if you have any query contact : nilayp799@gmail.com
